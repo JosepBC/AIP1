@@ -7,8 +7,8 @@ public class State {
     private final int col;
     private LinkedList<State> succesors;
 
-    public State(int current, int row, int col) {
-        this.cost = current;
+    public State(int cost, int row, int col) {
+        this.cost = cost;
         this.row = row;
         this.col = col;
         this.succesors = new LinkedList<>();
@@ -61,7 +61,7 @@ public class State {
     @Override
     public String toString() {
         return "State{" +
-                "current=" + cost +
+                "cost=" + cost +
                 ", row=" + row +
                 ", col=" + col +
                 '}';
